@@ -1,28 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>lego</title>
-        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-    </head>  
-  <body>
-    
-      <a-scene arjs="debugUIEnabled: false">
+ <title>lego</title>
+  <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
 
-      <a-asset>
-        <a-asset-item
-          id="lego"
-          src="Lego einser.glb">
-        </a-asset-item>
-      </a-asset>
+<body>
+  <a-scene arjs="debugUIEnabled: false">
 
-      <a-marker preset="hiro">
-         <a-entity gltf-model="#lego" scale="1 1 1" rotation="0 0 0"></a-entity>
-      </a-marker>
-      
-      <a-entity camera></a-entity>
-    </a-scene>
- 
-  </body>
+    <a-assets>
+      <a-asset-item id="lego" src="lego_einser.glb"></a-asset-item>
+    </a-assets>
+
+    <a-marker preset="hiro">
+      <a-entity gltf-model="#lego" scale="1 1 1" rotation="0 0 0"></a-entity>
+    </a-marker>
+
+    <a-entity camera></a-entity>
+
+  </a-scene>
+</body>
 </html>
-
