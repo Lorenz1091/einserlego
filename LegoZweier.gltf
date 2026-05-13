@@ -1,0 +1,88 @@
+	
+asset	
+generator	"3D Builder"
+version	"2.0"
+scene	0
+scenes	
+0	
+nodes	
+0	0
+nodes	
+0	
+mesh	0
+matrix	
+0	1
+1	0
+2	0
+3	0
+4	0
+5	-1.1920928955078125E-7JS:-1.1920928955078125e-7
+6	-0.99999988079071045JS:-0.9999998807907104
+7	0
+8	0
+9	0.99999988079071045JS:0.9999998807907104
+10	-1.1920928955078125E-7JS:-1.1920928955078125e-7
+11	0
+12	0
+13	0
+14	0
+15	1
+meshes	
+0	
+primitives	
+0	
+attributes	
+POSITION	0
+COLOR_0	1
+mode	4
+indices	2
+accessors	
+0	
+bufferView	0
+byteOffset	0
+count	876
+componentType	5126
+type	"VEC3"
+min	
+0	-0.020320000126957893
+1	-0.020320000126957893
+2	0
+max	
+0	0.020320000126957893
+1	0.063500002026557922JS:0.06350000202655792
+2	0.025399999693036079JS:0.02539999969303608
+1	
+bufferView	1
+byteOffset	0
+count	876
+componentType	5121
+type	"VEC4"
+normalized	true
+2	
+bufferView	2
+byteOffset	0
+count	5268
+componentType	5125
+type	"SCALAR"
+bufferViews	
+0	
+buffer	0
+byteOffset	0
+byteLength	10512
+byteStride	12
+target	34962
+1	
+buffer	0
+byteOffset	10512
+byteLength	3504
+byteStride	4
+target	34962
+2	
+buffer	0
+byteOffset	14016
+byteLength	21072
+target	34963
+buffers	
+0	
+byteLength	35088
+uri	"leog-2er-openjscad.bin"
