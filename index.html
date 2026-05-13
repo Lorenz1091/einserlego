@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<html> <head>
-    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-<title>IT Devices AR</title> </head>
+<html>
+<head>
+    <title>IT Devices AR</title>
 
-  <body>
-  <a-scene arjs="debugUIEnabled: false">
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style="margin:0; overflow:hidden;">
+
+<a-scene embedded arjs="debugUIEnabled: false">
+
     <a-assets>
-	    <a-asset-item id="zweier"  src="LegoZweier.gltf">
-            </a-asset-item>
-    </a-assets>    
+        <a-asset-item id="zweier" src="LegoZweier.gltf"></a-asset-item>
+    </a-assets>
 
+    <a-marker preset="kanji">
 
-      <a-entity gltf-model="#zweier"  scale="0.1 0.1 0.1" rotation="-90 -90 90"></a-entity>
+        <a-box
+            position="0 0.5 0"
+            material="color: blue;">
+        </a-box>
 
-    </a-marker-camera>
-<a-entity camera></a-entity> 
+        <a-entity
+            gltf-model="#zweier"
+            scale="0.1 0.1 0.1"
+            rotation="-90 -90 90">
+        </a-entity>
+
+    </a-marker>
+
+    <a-entity camera></a-entity>
 
 </a-scene>
 
