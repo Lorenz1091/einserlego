@@ -9,18 +9,14 @@
 
 <a-scene embedded arjs="debugUIEnabled: false">
 
-    <a-assets>
-        <a-asset-item id="balken" src="Balken.gltf"></a-asset-item>
-    </a-assets>
-
-    <!-- Marker 1: Hiro - Balken -->
+    <!-- Marker 1: Hiro - Saturn -->
     <a-marker preset="hiro">
-        <a-entity
-            gltf-model="#balken"
-            position="0 0.5 0"
-            scale="1 1 1"
-            rotation="0 0 0">
-        </a-entity>
+        <a-sphere position="0 1 0" radius="0.5" color="orange"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear">
+        </a-sphere>
+        <a-torus position="0 1 0" radius="0.8" radius-tubular="0.1"
+            rotation="70 0 0" color="yellow" opacity="0.6">
+        </a-torus>
     </a-marker>
 
     <!-- Marker 2: Kanji - Haus -->
